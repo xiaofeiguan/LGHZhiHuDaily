@@ -28,6 +28,7 @@
 		77C2F65B1EF8BA7A00AF87F2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C2F64D1EF8BA7A00AF87F2 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		77C2F65C1EF8BA7A00AF87F2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C2F64F1EF8BA7A00AF87F2 /* View+MASAdditions.m */; };
 		77C2F65D1EF8BA7A00AF87F2 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C2F6521EF8BA7A00AF87F2 /* ViewController+MASAdditions.m */; };
+		77C2F6601EF9554E00AF87F2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C2F65F1EF9554E00AF87F2 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		77C2F6501EF8BA7A00AF87F2 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		77C2F6511EF8BA7A00AF87F2 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		77C2F6521EF8BA7A00AF87F2 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		77C2F65E1EF9554E00AF87F2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		77C2F65F1EF9554E00AF87F2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 		77C2F62B1EF8B93800AF87F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77C2F65E1EF9554E00AF87F2 /* HomeViewController.h */,
+				77C2F65F1EF9554E00AF87F2 /* HomeViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				777C920F1EF4EB120033B7EA /* AppDelegate.m in Sources */,
 				77C2F6321EF8BA4100AF87F2 /* ViewUtils.m in Sources */,
 				77C2F65C1EF8BA7A00AF87F2 /* View+MASAdditions.m in Sources */,
+				77C2F6601EF9554E00AF87F2 /* HomeViewController.m in Sources */,
 				77C2F6541EF8BA7A00AF87F2 /* MASCompositeConstraint.m in Sources */,
 				77C2F6581EF8BA7A00AF87F2 /* MASViewAttribute.m in Sources */,
 				77C2F6561EF8BA7A00AF87F2 /* MASConstraintMaker.m in Sources */,
