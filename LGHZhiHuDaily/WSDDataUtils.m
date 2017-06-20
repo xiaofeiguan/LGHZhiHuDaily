@@ -11,6 +11,12 @@
 @implementation WSDDataUtils
 
 
+
+/**
+ 今天的日期 20160701
+
+ @return <#return value description#>
+ */
 +(NSString *)todayDateString {
     NSDate *today = [NSDate date];
     NSDateFormatter *formatter = [NSDateFormatter new];
@@ -19,6 +25,13 @@
     return [formatter stringFromDate:today];
 }
 
+
+/**
+ 前days天的日期
+
+ @param days 前days
+ @return 前days天的日期
+ */
 +(NSString *)dateStringBeforeDays:(NSInteger)days {
     NSDateFormatter *formatter = [NSDateFormatter new];
     [formatter setDateFormat:@"yyyyMMdd"];

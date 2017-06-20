@@ -10,13 +10,35 @@
 
 @interface HomeViewController ()
 
+@property(nonatomic, assign) NSInteger days;
+
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    [self fetchData];
+}
+
+-(void)fetchData
+{
+    
+    NSString *url = nil;
+    if (self.days == -1) {
+        url = @"http://news-at.zhihu.com/api/4/news/latest";
+    } else {
+        url = [@"http://news.at.zhihu.com/api/4/news/before/"
+               stringByAppendingString:[WSDDataUtils dateStringBeforeDays:self.days]];
+    }
+    
+    NSURLSessionConfiguration *config =
+    [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFHTTPSessionManager *manager =
+    [[AFHTTPSessionManager alloc] initWithSessionConfiguration:config];
+    
 }
 
 - (void)didReceiveMemoryWarning {
